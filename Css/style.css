@@ -1,0 +1,35 @@
+html{
+    background-color: #ccc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* header */
+.headerprincipal__figure{
+    display: flex; 
+    justify-content: flex-start;
+    margin: 2% auto;
+}
+
+/* main */
+.mainPrincipal__container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10% auto;
+    align-content: center;
+}
+.mainPrincipal__input{
+    display: flex;
+    align-self: center;
+    margin: 2%auto;
+}
+.mainPrincipal__button{
+    display: flex;
+    align-items: flex-end;
+}
+
+.mainPrincipal__show{
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer */

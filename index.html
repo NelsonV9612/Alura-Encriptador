@@ -9,27 +9,32 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <header class="encrip-body">
-      <figure class="encrip-body__img">
-        <h1><img src="./Banner/Logo-1.png" alt="Logo"></h1>
+    <header class="headerprincipal">
+      <figure class="headerprincipal__figure">
+        <h1><img src="./Banner/Logo-1.png" alt="Logo" class="headerprincipal__img"></h1>
       </figure>
     </header>
-    <main>
-        <section>
-            <div>
+    <main class="mainPrincipal">
+        <section class="mainPrincipal__container">
+            <div class="mainPrincipal__input">
+                <textarea name="text-input" class="text-input" cols="30" rows="2" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="mainPrincipal__button">
+                <p>&excl;Solo letras minúsculas y sin acentos</p>
+                <input type="button" value="Encriptar" onclick="btnEncriptar()">
+                <input type="button" value="Desencriptar" onclick="btnDesencriptarr()">
+            </div>
+            <div class="mainPrincipal__show">
+                <textarea name="text-show" class="text-show" cols="30" rows="2"></textarea>
                 <img src="./Banner/Muñeco.png" alt="Img">
+                <input type="button" value="Copiar" onclick="btnCopiar()">
             </div>
-            <div>
-               <input type="text" placeholder="Ingrese el texto aquí">
-            </div>
+           
         </section>
     </main>
     <footer>
-        <p>&excl;Solo letras minúsculas y sin acentos</p>
-        <div>
-            <input type="button" value="Encriptar">
-            <input type="button" value="Desencriptar">
-        </div>
+        
+        
     </footer>
     <script>
 

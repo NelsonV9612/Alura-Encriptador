@@ -16,28 +16,26 @@
     </header>
     <main class="mainPrincipal">
         <section class="mainPrincipal__container">
-            <div class="mainPrincipal__input">
-                <textarea name="text-input" class="text-input" cols="30" rows="2" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="container">
+                <div class="mainPrincipal__input">
+                    <textarea name="text-input" class="text-input" cols="50" rows="20" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="mainPrincipal__button">
+                    <p>&excl;Solo letras minúsculas y sin acentos</p>
+                    <input type="button" value="Encriptar" onclick="btnEncriptar()" class="mainPrincipal__buttonItem" class="enc">
+                    <input type="button" value="Desencriptar" onclick="btnDesencriptarr()" class="mainPrincipal__buttonItem">
+                </div>
             </div>
-            <div class="mainPrincipal__button">
-                <p>&excl;Solo letras minúsculas y sin acentos</p>
-                <input type="button" value="Encriptar" onclick="btnEncriptar()">
-                <input type="button" value="Desencriptar" onclick="btnDesencriptarr()">
-            </div>
-            <div class="mainPrincipal__show">
-                <textarea name="text-show" class="text-show" cols="30" rows="2"></textarea>
-                <img src="./Banner/Muñeco.png" alt="Img">
-                <input type="button" value="Copiar" onclick="btnCopiar()">
+            <div class="mainPrincipal__show"> 
+                <textarea name="text-show" class="text-show" cols="40" rows="20"></textarea>
+                <h3>No se encontró ningún mensaje</h3>
+                <input type="button" value="Copiar" onclick="btnCopiar()" class="mainPrincipal__showBotton">
             </div>
            
         </section>
     </main>
     <footer>
-        
-        
     </footer>
-    <script>
-
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>

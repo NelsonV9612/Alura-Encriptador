@@ -31,8 +31,9 @@ html{
     display: flex;
     margin: 0 auto;
     padding: 0 0 2% 2%;
-    
+    flex-direction: column;
 }
+
 .text-input{
    margin: 0 0 2% 0;
    resize: none;
@@ -43,21 +44,22 @@ html{
 }
 .mainPrincipal__button{
     display: flex;
-    align-items: flex-end;
-    flex-flow: wrap;
     justify-content: space-between;
+    column-gap: 70px;
 }
-.mainPrincipal__buttonItem{
-   width: 46%;
+.mainPrincipal__btnEncrypt,.mainPrincipal__btnUnencrypt{
+   width: 50%;
    height: 30px;
    margin: 1% 2%;
-   background:#ccc;
    color:  rgb(40, 127, 203);
    border: solid 2px;
    border-radius: 10px;
    margin-bottom: 10%;
+   padding: 5px 50px;
 }
-
+.mainPrincipal__btnEncrypt{
+    background: rgba(4, 80, 121, 0.922);
+}
 
 .mainPrincipal__show{
     background-color: aliceblue;
@@ -68,6 +70,8 @@ html{
     border-radius: 10px;
 }
 .text-show{
+    display: flex;
+    flex-direction: column;
     background: url(../Banner/Muñeco.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -75,7 +79,7 @@ html{
     resize: none;
     border: none;
 }
-.mainPrincipal__show h3{
+.mainPrincipal__show .messageDoll{
     display: flex;
     justify-content: center;
 }
@@ -90,11 +94,11 @@ html{
     height: 30px;
     align-self: center;
 }
-.mainPrincipal__buttonItem:hover ,.mainPrincipal__showBotton:hover{
+.mainPrincipal__btnEncrypt:hover,.mainPrincipal__btnUnencrypt:hover,.mainPrincipal__showBotton:hover{
     transform: scale(1.1);
     box-shadow: 0 10px 10px;
 }
-.mainPrincipal__buttonItem:active ,.mainPrincipal__showBotton:active{
+.mainPrincipal__btnEncrypt:active,.mainPrincipal__btnUnencrypt:active,.mainPrincipal__showBotton:active{
     color: red;
 }
 

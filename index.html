@@ -19,16 +19,16 @@
             <div class="container">
                 <div class="mainPrincipal__input">
                     <textarea name="text-input" class="text-input" cols="50" rows="20" placeholder="Ingrese el texto aquí"></textarea>
+                    <p>&excl;Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="mainPrincipal__button">
-                    <p>&excl;Solo letras minúsculas y sin acentos</p>
-                    <input type="button" value="Encriptar" onclick="btnEncriptar()" class="mainPrincipal__buttonItem" class="enc">
-                    <input type="button" value="Desencriptar" onclick="btnDesencriptarr()" class="mainPrincipal__buttonItem">
+                        <input type="button" value="Encriptar" onclick="btnEncriptar()" class="mainPrincipal__btnEncrypt" class="enc">
+                        <input type="button" value="Desencriptar" onclick="btnDesencriptarr()" class="mainPrincipal__btnUnencrypt">
                 </div>
             </div>
             <div class="mainPrincipal__show"> 
                 <textarea name="text-show" class="text-show" cols="40" rows="20"></textarea>
-                <h3>No se encontró ningún mensaje</h3>
+                <h3 class="messageDoll">No se encontró ningún mensaje</h3>
                 <input type="button" value="Copiar" onclick="btnCopiar()" class="mainPrincipal__showBotton">
             </div>
            

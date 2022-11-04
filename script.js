@@ -48,7 +48,7 @@ function btnDesencriptarr() {
     messageDoll.style.display="none";/* con esto hago que al llamar la funcion  desaparezca mi mensaje */
 }
 function btnCopiar() {
-   /*  message.select(); */ /*  selecciona el mensaje al hacer click en el boton copiar */
+    message.select(); /*  selecciona el mensaje al hacer click en el boton copiar */
     navigator.clipboard.writeText(message.value);
     message.value="";
 }

@@ -8,29 +8,52 @@ let messageDoll=document.querySelector(".messageDoll")
 `La letra "u" es convertida para "ufat"` */
 
 function encrypt(encryptString) {
-    let matriz=[["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];
-    encryptString=encryptString.toLowerCase();
-    for (let i = 0; i < matriz.length; i++) {
-        if (encryptString.includes(matriz[i][0])) {
-           encryptString=encryptString.replaceAll(matriz[i][0],matriz[i][1]);
+    let encryptphrase=encryptString.toLowerCase();
+    let finalTex=" ";
+    for (let i = 0; i < encryptphrase.length; i++) {
+        if (encryptphrase[i]=="a") {
+            finalTex=finalTex+"ai";
+        }else if (encryptphrase[i]=="e") {
+            finalTex=finalTex+"enter";
+        }else if (encryptphrase[i]=="i") {
+            finalTex=finalTex+"imes";
+        }else if (encryptphrase[i]=="o") {
+            finalTex=finalTex+"ober";
+        }else if (encryptphrase[i]=="u") {
+            finalTex=finalTex+"ufat";
+        }else{
+            finalTex=finalTex+encryptphrase[i];
         }
     }
-    return encryptString;
+    return finalTex;
 }
 
-function unencrypt(unencryptString) {
-    let matriz=[["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];
-    unencryptString=unencryptString.toLowerCase();
-    for (let i = 0; i < matriz.length; i++) {
-        if (unencryptString.includes(matriz[i][1])) {
-           unencryptString=unencryptString.replaceAll(matriz[i][1],matriz[i][0]);
-           
+function unencrypt(encryptString) {
+    let encryptphrase=encryptString.toLowerCase();
+    let finalTex=" ";
+    for (let i = 0; i < encryptphrase.length; i++) {
+        if (encryptphrase[i]=="a") {
+            finalTex=finalTex+"a";
+            i+=1;
+        }else if (encryptphrase[i]=="e") {
+            finalTex=finalTex+"e";
+            i+=4;
+        }else if (encryptphrase[i]=="i") {
+            finalTex=finalTex+"i";
+            i+=3;
+        }else if (encryptphrase[i]=="o") {
+            finalTex=finalTex+"o";
+            i+=3
+        }else if (encryptphrase[i]=="u") {
+            finalTex=finalTex+"u";
+            i=i+3;
+        }else{
+            finalTex=finalTex+encryptphrase[i];
         }
     }
-    return unencryptString;
+    return finalTex;
 }
 function btnEncriptar() {
-    
     let encryptText=encrypt(inputText.value)
     message.value=encryptText;
     message.style.backgroundImage="none";
@@ -38,7 +61,7 @@ function btnEncriptar() {
     messageDoll.style.display="none";
 }
 
-function btnDesencriptarr() {
+function btnDesencriptar() {
     let unencryptText=unencrypt(inputText.value)
     message.value=unencryptText;
     message.style.backgroundImage="none";

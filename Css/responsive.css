@@ -1,0 +1,16 @@
+@media screen and ( max-width:760px) {
+    .container{
+        margin: 0 auto;
+    }
+    .mainPrincipal__container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .mainPrincipal__show{
+        width: 0 auto;
+        margin: 0 2% 2% 10%;
+    }
+    .text-input{
+        margin: 0 auto;
+    }
+}

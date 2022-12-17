@@ -1,5 +1,5 @@
-@import url(reset.css);
-@import url(responsive.css);
+@import url(css/reset.css);
+@import url(css/responsive.css);
 html{
     background-color: #ccc;
     font-family: 'Times New Roman', Times, serif;
